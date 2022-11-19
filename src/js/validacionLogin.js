@@ -11,7 +11,7 @@ function validarLogin(event){
         console.log(correo);
 
     if(correo === 'correo@correo.com' && pass === '12345'){
-        window.location.href = '../screens/lista_productos.html';
+        window.location.href = './../screens/lista_productos.html';
         return;
     }else{
         correo.focus;
