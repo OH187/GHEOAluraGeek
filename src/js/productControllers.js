@@ -2,7 +2,6 @@
 import { productServices } from "./services.js";
 
 //Seleccion del contenedor en el DOM
-// const table = document.querySelector('[data-table]');
 const table = document.querySelector('.cartas_BD');
 
 

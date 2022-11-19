@@ -8,7 +8,6 @@ function validarLogin(event){
     event.preventDefault();
         var correo = document.querySelector('#correo').value;
         var pass = document.querySelector('#password').value;
-        console.log(correo);
 
     if(correo === 'correo@correo.com' && pass === '12345'){
         window.location.href = './../screens/lista_productos.html';
@@ -20,7 +19,3 @@ function validarLogin(event){
     this.submit();
 }
 
-/* btnEntrar.addEventListener('click', () => {
-    
-
-}); */

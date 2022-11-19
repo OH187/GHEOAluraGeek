@@ -5,16 +5,6 @@ const formulario = document.querySelector('[data-form]');
 const btnAgregar = document.querySelector('#btnAgregar');
 const btnBuscar = document.querySelector('#buscador');
 
-
-//Boton de buscar una imagen
-/* btnBuscar.addEventListener("click", (event) => {
-    event.preventDefault();
-    var win = window.open("https://www.google.com/", '_blank'); //Redireccionamos y abrimos otra pestaña
-    // Cambiar el foco al nuevo tab (punto opcional)
-    win.focus();
-}); */
-
-
 //Boton de registrar contenido
 formulario.addEventListener('submit', (event) => { //Tomamos el click del boton dle formulario
     event.preventDefault();
