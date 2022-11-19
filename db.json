@@ -1,0 +1,140 @@
+{
+  "productos": [
+    {
+      "imagen": "../../public/build/img/14.png",
+      "nombre": "Camisa",
+      "categoria": "diversos",
+      "precio": "25",
+      "descripcion": "Camisa con un estampado de Nintendo",
+      "id": "1ded5810-0479-4b3c-80d4-af19c8b8b0fe"
+    },
+    {
+      "imagen": "https://mundo-superheroes.com/wp-content/uploads/camiseta-capitan-america.jpg",
+      "nombre": "Camisa",
+      "categoria": "diversos",
+      "precio": "25",
+      "descripcion": "Camisa de Capitán América",
+      "id": "50c15943-6828-4051-8d1d-0b75ad689a6e"
+    },
+    {
+      "imagen": "../../public/build/img/17.png",
+      "nombre": "Camisa",
+      "categoria": "diversos",
+      "precio": "30",
+      "descripcion": "Camisa del Manchester",
+      "id": "99766dcb-cf8b-4a31-bc20-3546723fec5a"
+    },
+    {
+      "imagen": "https://siman.vtexassets.com/arquivos/ids/3430453/103844891_1.jpg?v=638000825843070000",
+      "nombre": "Short corto",
+      "categoria": "diversos",
+      "precio": "19.99",
+      "descripcion": "Short de Spider-Man",
+      "id": "0974aec6-897a-4b21-9d33-3535d5e413b7"
+    },
+    {
+      "imagen": "https://assets.nintendo.com/image/upload/f_auto/q_auto/c_fill,w_300/ncom/en_US/switch/system/three-modes-in-one",
+      "nombre": "Consola Switch",
+      "categoria": "consola",
+      "precio": "249",
+      "descripcion": "Consola",
+      "id": "f9d7c915-f8e0-48dd-a9ec-71e254818e50"
+    },
+    {
+      "imagen": "https://www.roadrunningreview.com/Under-Armour-HOVR-Machina_664_4_100686.jpg",
+      "nombre": "Zapatos Underarmour",
+      "categoria": "diversos",
+      "precio": "150",
+      "descripcion": "Zapatos under armor de alta calidad",
+      "id": "ba747399-e773-462d-be69-363d0b878e52"
+    },
+    {
+      "imagen": "/public/build/img/1.png",
+      "nombre": "Tasa blanca",
+      "categoria": "starwars",
+      "precio": "15.99",
+      "descripcion": "Producto de la serie de Star Wars",
+      "id": "96d91f49-15c2-487e-801a-9aab5f783d18"
+    },
+    {
+      "imagen": "/public/build/img/2.png",
+      "nombre": "Figuras",
+      "categoria": "starwars",
+      "precio": "49.99",
+      "descripcion": "Producto de la serie de Star Wars",
+      "id": "5d992987-d04b-4596-b9ea-9ed1d85710e5"
+    },
+    {
+      "imagen": "/public/build/img/3.png",
+      "nombre": "Producto unico",
+      "categoria": "starwars",
+      "precio": "30",
+      "descripcion": "Producto de la serie de Star Wars",
+      "id": "10beb0b7-e2df-48fd-a201-54bdc19f97d8"
+    },
+    {
+      "imagen": "/public/build/img/4.png",
+      "nombre": "Guerrero",
+      "categoria": "starwars",
+      "precio": "19.99",
+      "descripcion": "Producto de un guerrero de la serie de Star Wars",
+      "id": "09b4923e-3ad1-400b-8d7b-1fd1513de593"
+    },
+    {
+      "imagen": "/public/build/img/5.png",
+      "nombre": "Bebe Yoda",
+      "categoria": "starwars",
+      "precio": "13.99",
+      "descripcion": "Producto de la serie de Star Wars",
+      "id": "3e2f311a-57a2-4b33-8ec4-81498886edb1"
+    },
+    {
+      "imagen": "/public/build/img/6.png",
+      "nombre": "Palpatine",
+      "categoria": "starwars",
+      "precio": "25.95",
+      "descripcion": "Producto de la serie de Star Wars",
+      "id": "4354ef2f-cdc5-4069-87ec-5cab2996d52e"
+    },
+    {
+      "imagen": "/public/build/img/7.png",
+      "nombre": "Control Xbox",
+      "categoria": "consola",
+      "precio": "17.99",
+      "descripcion": "Producto de la serie de consolas",
+      "id": "61c51724-cc7c-4a7a-9008-3487c34321cc"
+    },
+    {
+      "imagen": "/public/build/img/8.png",
+      "nombre": "Play Station 5",
+      "categoria": "consola",
+      "precio": "499.99",
+      "descripcion": "Producto de la serie de consolas",
+      "id": "81849589-d5eb-4aa2-a0aa-1dd34656c120"
+    },
+    {
+      "imagen": "/public/build/img/9.png",
+      "nombre": "Nintendo ",
+      "categoria": "consola",
+      "precio": "199.99",
+      "descripcion": "Producto de la serie de consolas",
+      "id": "08fff003-11b6-46ea-a2ff-25b3be2a92b0"
+    },
+    {
+      "imagen": "https://martimx.vtexassets.com/arquivos/ids/875478-800-800?v=637847930692930000&width=800&height=800&aspect=true",
+      "nombre": "Balón",
+      "categoria": "diversos",
+      "precio": "69.99",
+      "descripcion": "Balón de Qatar",
+      "id": "2dfbaa71-7fcc-4b42-9273-2311b60ea554"
+    },
+    {
+      "imagen": "https://s1.eestatic.com/2021/07/12/deportes/futbol/595952248_195032434_1024x576.jpg",
+      "nombre": "Balón",
+      "categoria": "diversos",
+      "precio": "24.99",
+      "descripcion": "Balón de la Liga Santander",
+      "id": "34a00e18-8e24-4f58-a51e-9fd74a8d1ed3"
+    }
+  ]
+}

@@ -1,0 +1,390 @@
+.parrafos{
+    font-size: $tamano1;
+    width: 95%;
+    line-height: 1.5;
+    padding: 5px 10px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.contenedor-principal{    
+    max-width: 1350px;
+    margin: auto;
+    margin-top: 0;
+    background: linear-gradient(to right, $azul 30%, $fondo);
+    // background-color: $azul;
+    color: $blanco;
+
+    a{
+        cursor: pointer;
+    }    
+} 
+.botones{
+    padding:0 0 0 20px;
+    input{
+        margin: 5px auto;
+    }
+}
+
+                        //Contenedor de fotos y contenido interno
+.contenedor-foto{
+        background-image: url(../../../public/build/img/Hero.jpg);
+        opacity: 0.8;
+        max-width: 1350px;
+        margin: auto;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .contenido-foto{
+            margin-left: 20px ;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            justify-content: center;
+            
+            // align-items:center;
+        
+        h1{
+            font-size: 5rem;
+            font-weight: bold;
+            margin: 0 ;
+            text-align: left;
+            
+        }
+        h3{
+            margin: 0;
+            text-align: left;
+            font-size: $tamano2;
+            font-weight: $bold;
+        }
+        input{
+            height: 5rem;
+            width: 16rem;
+            background-color: $fondo2;
+            color: $blanco;
+            border: none;
+                }
+            } 
+        input:hover{
+            cursor: pointer;
+        }    
+
+    }
+
+
+.miNombre{
+    color: $blanco;
+    position: relative;
+    margin-top: 0;
+    font-weight: 400;
+}
+
+
+.descripcion{
+    color: $blanco;
+    padding: 30px;
+}
+
+.titulos{
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    h3{
+        font-weight: 600;
+        margin: 10px 0 0 0;
+    }
+    .vinculo{
+        color: $fondo2;
+        cursor: pointer;
+        font-weight: bold;
+    }
+}
+
+
+.carta{
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgb($fondo2, 0.2);
+    picture{
+        // max-width: 75%;
+        width: 95%;
+        margin: 0 auto;
+    }
+    a {
+        color: rgb($blanco, 0.5);
+    }
+    a:hover{
+        color: $blanco;
+    }
+
+    h4{
+        font-size: 2.75rem;
+        font-weight: $bold;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .btn-demo{
+        cursor: pointer;
+        width: 15rem;
+        height: 4rem;
+        border-radius: 5px;
+        background-color: rgb($blanco, 0.5);
+        border: 1px solid rgb($fondo, 0.7);
+        color: rgb($azul, 0.7);
+        font-family: $fuenteSecundaria;
+    }
+    
+    .btn-demo:hover{
+        background-color: rgb($rojo, 0.4);
+        border: 1px solid $fondo;
+        color: $blanco;
+    }
+
+    .btn-repo{
+        cursor: pointer;
+        width: 15rem;
+        height: 4rem;
+        background-color: rgb($blanco, 0.5);
+        border-radius: 5px;
+        border: 1px solid rgb($fondo, 0.7);
+        color: rgb($azul, 0.7);
+        font-family: $fuenteSecundaria;
+    }
+
+    .btn-repo:hover{
+        background-color: rgb($rojo, 0.4);
+        border: 1px solid $fondo;
+        color: $blanco;
+    }
+}
+.cartas{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    column-gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    .carta{
+        margin: 5px;
+    }
+}
+
+.carta-grande{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem ;
+    padding: 1rem;
+    background-color: rgb($negro, 0.2);
+    .carta-grande_contenido{
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    img{
+        width: 75%;
+        height: 30rem;
+        margin: 0 auto;
+        border-radius: 15px;
+    }
+}
+
+.tarjeta-enviado{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    width: 90%;
+    margin: 15rem auto;
+    padding: 15px;
+    background-color: rgb($fondo2, 0.2);
+
+    h1{
+        font-weight: bold;
+    }
+}
+
+.cartas_BD{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .carta{
+        margin: 1.5rem auto;
+        width: 90%;
+        img{
+            width: 7rem;
+            margin: 0 auto;
+        }
+        p{
+            font-size: 10px;
+        }
+        ul{
+            font-size: 10px;
+        }
+    }
+    
+}
+.btn_BD{
+    padding-right: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    a{
+        background-color: rgb($azul, 0.4);
+        padding: 1rem;
+        border-radius: 15px;
+    }
+    a:hover{
+        background-color: $azul;
+        font-weight: bold;
+    }
+}
+
+                                // MIXINS
+
+@include telefono{
+    .cartas{
+        display: grid;
+        column-gap: 1rem;
+        margin-bottom: 20px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .contenido-foto{
+            width: 95%;
+            // margin-left: 25px;
+            margin: 0 auto;
+    }
+    .carta-grande{
+        display: flex;
+        flex-direction: row;
+        max-width: 700px;
+        margin: 0 auto;
+        img{
+            width: 50%;
+            height: 30rem;
+        }
+        .carta-grande_contenido{
+            width: 50%;
+            text-align: center;
+        }
+    }
+    .titulos{
+        display: flex;
+    }
+    
+    .cartas_BD{
+        width: 95%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1rem;
+        .carta{
+            margin: 1.5rem auto;
+            width: 95%;
+            img{
+                width: 9rem;
+                margin: 0 auto;
+            }
+            p{
+                font-size: 11px;
+            }
+        }
+        
+    }
+
+}
+@include tablet {
+    .tarjeta-enviado{
+        width: 50%;
+        max-width: 50%;
+    }
+    
+    
+    .cartas{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+        align-items: center;
+        max-width: 90%;
+        column-gap: 1rem;
+        margin:  auto;
+    }
+
+    .carta{
+        width: 100%;
+        max-width: 100%;
+        a:hover{
+            color: $fondo2;
+            cursor: pointer;
+            font-size: 1.65rem;
+        }
+        
+        picture{
+            width: 40%;
+        }
+    }
+
+    .descripcion{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .contenedor-foto{
+        height: 30rem;
+    }
+
+    .cartas_BD{
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        flex-wrap: wrap;
+        grid-template-columns: repeat(5, 1fr);
+        .carta{
+            margin: 1.5rem auto;
+            width: 90%;
+            img{
+                width: 10rem;
+                margin: 0 auto;
+            }
+            p{
+                font-size: 10px;
+            }
+            ul{
+                font-size: 10px;
+            }
+        }
+        
+    }
+    
+    
+}
+
+@include desktop{
+    .cartas{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .contenido-foto{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+        // text-align: left;
+        // justify-content: center;
+        // align-items:flex-start;
+
+    h1{
+        font-size: 6rem;
+        
+        }
+    }
+}

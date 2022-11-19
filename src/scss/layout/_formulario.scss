@@ -1,0 +1,193 @@
+.quienes-somos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 15px;
+
+    .links{
+        text-decoration: none;
+        color: $blanco;
+        font-size: $tamano1;
+    }
+}
+.input-select{
+    color: $blanco;
+}
+.contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+    margin:  0 auto;
+    align-items: center;
+    margin-top: 3rem;
+    
+    .logo{
+        margin-bottom: 1rem;
+        width: 17rem;
+    }
+}
+
+
+.formulario{
+    width: 95%;
+    margin: 0 auto;
+        
+        .margin-auto{
+            max-width: 50%;
+            margin: auto 0;
+        
+    }
+    
+    h2{
+        margin: 0 auto;
+    }
+    p{
+        font-size: 1.6rem;
+        color: $negro;
+        margin: 2rem 0 0 0;
+    }
+
+    legend{
+        font-size: 2rem;
+        color: $negro;
+    }
+    label{
+        font-weight: $bold;
+        color: $azul;
+        text-transform: uppercase;
+        display: block;
+    }
+    input:not([type="submit"]), //Selector de atributo que indica que el estilo se aplicara a todos los input execto el submit
+    textarea,
+    select{ 
+        // padding: 1rem;
+        display: block;
+        width: 100%;
+        height: 5rem;
+        background-color: rgba($blanco, 0.4);
+        border: 1px solid $fondo;
+        border-radius: 1rem;
+        color: $negro;
+    }
+    
+    textarea{
+        height: 10rem;
+        resize: none;
+    }
+    .card__title {
+        font-size: $tamano2;
+        text-align: left;
+}
+
+    .form-contacto{
+        max-width: 30rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .margin-auto{
+        max-width: 80%;
+        margin: auto 0;
+    }
+
+    input[type="submit"]{
+        margin-top: 2rem;
+    }
+}
+
+input:-internal-autofill-selected{
+    background-color: rgba($blanco, 0.4);
+}
+                                    //MIXINS
+@include telefono{
+    .quienes-somos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .formulario{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    
+    
+}
+
+
+@include tablet{
+    /* .contacto{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    .logo-quienes{
+        display: block;
+        max-width: 1350px;
+        width: 100%;
+    } 
+        .formulario{
+            width: 50%;
+        }
+    } */
+
+
+    .contacto{
+            display: grid;
+            grid-template-rows: 50px 300px;
+            grid-template-columns: 1fr 1fr 2fr;  
+            grid-template-areas: 
+            "area1 area1 area1 area1 "
+            "area2 area3 area3 area3";
+            column-gap: 1rem;
+            max-width: 1350px;
+            width: 95%;
+            margin: 20px auto;
+
+        }
+        .quienes-somos{
+            grid-area: area2;
+            justify-content: flex-start;
+            align-items: flex-start;
+            text-align: left;
+            a:hover{
+                cursor: pointer;
+                color: $fondo2;
+            }
+        }
+
+        .logo  { 
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            grid-area: area1;
+            // grid-area: 1 / 1 / 4 / 3; //fila inicial/ columa de inicial/ fila final/ columna final
+    }
+        .formulario{
+            grid-area: area3;
+        }
+
+}
+
+//Solucionar esto
+@include desktop{
+    .contacto{
+        display: grid;
+        column-gap: 1rem;
+        max-width: 1350px;
+        width: 95%;
+        margin: 15px auto;
+    }
+    .logo{ grid-area: 1 / 1 / 2 / 2;} //fila inicial/ columa de inicial/ fila final/ columna final
+    .quienes-somos{ grid-area: 2 / 2 / 2 / 3;}  //fila inicial/ columa de inicial/ fila final/ columna final
+    .formulario{ grid-area: 2 / 3 / 2 / 3;}  //fila inicial/ columa de inicial/ fila final/ columna final
+
+} 

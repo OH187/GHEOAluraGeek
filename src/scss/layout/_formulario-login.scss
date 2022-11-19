@@ -1,0 +1,103 @@
+.formulario-login{
+    width: 85%;
+    margin: 10rem auto;
+    max-width: 1350px;
+
+    .button-login {
+        cursor: pointer;
+        display: block;
+        background-color: $azul;
+        border-radius: 7px;
+        border: 1px solid rgba($blanco, 0.3);
+        width: 100%;
+        margin-top: 1rem;
+        padding: 1.75rem;
+        box-sizing: border-box;
+        color: rgb($blanco, 0.5);
+        font-size: $tamano2;
+        align-self: center;
+        text-align: center;
+    }
+    .button-login:hover{
+        background-color: $fondo2;
+        border: 1px solid rgb($blanco, 0.8);
+        color: $azul;
+        font-weight: bold;
+    }
+
+    .margin-auto{
+            max-width: 50%;
+            margin: auto 0;
+    }
+    
+    h2{
+        margin: 0 auto;
+    }
+    p{
+        font-size: 1.6rem;
+        color: $negro;
+        margin: 2rem 0 0 0;
+    }
+
+    legend{
+        font-size: 2rem;
+        color: $negro;
+    }
+    label{
+        font-weight: $bold;
+        color: $azul;
+        text-transform: uppercase;
+        display: block;
+    }
+    input:not([type="submit"]), //Selector de atributo que indica que el estilo se aplicara a todos los input execto el submit
+    textarea,
+    select{ 
+        // padding: 1rem;
+        display: block;
+        width: 100%;
+        height: 5rem;
+        background-color: rgba($blanco, 0.4);
+        border: 1px solid $fondo;
+        border-radius: 1rem;
+        color: $negro;
+    }
+    
+    textarea{
+        height: 10rem;
+        resize: none;
+    }
+    .card__title-login {
+        font-size: $tamano3;
+        text-align: center;
+        margin-bottom: 2rem;
+}
+
+    .form-contacto{
+        max-width: 30rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .margin-auto{
+        max-width: 80%;
+        margin: auto 0;
+    }
+
+    /* input[type="submit"]{
+        margin-top: 2rem;
+    } */
+}
+@include telefono{
+    .formulario-login{
+        width: 70%;
+        margin: 15rem auto;
+    }
+}
+
+@include tablet {
+    .formulario-login{
+        width: 40%;
+        max-width: 600px;
+        margin: 15rem auto;
+    }
+}

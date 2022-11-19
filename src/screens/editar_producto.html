@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="../../public/build/css/app.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shorcut icon" href="../../public/build/img/control.png" />
+    <title>AuraGeek</title>
+</head>
+
+<body>
+        <header class="header" > 
+            <div class="contenido-header">                
+                <a href="../../index.html"><img class="logo" src="../../public/build/img/Logo.png" alt="Logo"></a>
+
+                <div class="input-wrapper">
+                    <input class="buscador" type="search" value="" placeholder="¿Que desea buscar?">
+                    <!-- <img class="buscar" src="/public/build/img/buscar.png" alt="Buscar"> -->
+                </div>
+                <a href="./lista_productos.html"><input class="boton" type="submit" value="Menu Administrador"></a>
+                </div> <!-- Cierre de barra -->
+            </div>
+        </header>
+
+        
+
+        <main class="contenedor-principal">
+
+            <section>
+            <form action="#" class="formulario-login flex flex--column" data-form>
+                <h2 id="contacto" class="card__title-login">Actualizar producto</h2>
+                    <div class="input-container">
+                        <input name="imagen" id="imagen" class="input" type="text" placeholder="Nombre" required data-url data-tipo="imagen" />
+                        <label class="input-label" for="imagen">URL de la imagen</label>
+                        <input type="submit" id="btn_buscar" class="boton-agregar" value="Buscar imagen"/>
+                        <span class="input-message-error">Este campo es válido</span>
+                    </div>
+                    
+
+                    <div class="input-container">
+                        <input name="categoria" id="categoria" class="input" type="text" placeholder="Escriba la catgoria del producto" required data-categoria data-tipo="categoria"/>
+                        <label class="input-label" for="categoria">Categoría</label>
+                        <span class="input-message-error">Este campo es válido</span>
+                    </div>
+
+                    <div class="input-container">
+                        <input name="nombre" id="nombre" class="input" type="text" placeholder="Nombre" maxlength="20" required data-nombre data-tipo="nombre" />
+                        <label class="input-label" for="nombre">Nombre del producto</label>
+                        <span class="input-message-error">Este campo es válido</span>
+                    </div>
+
+                    <div class="input-container">
+                        <input name="precio" id="precio" class="input" type="text" placeholder="Nombre" required data-precio data-tipo="precio" />
+                        <label class="input-label" for="precio">Precio</label>
+                        <span class="input-message-error">Este campo es válido</span>
+                    </div>
+
+                    <div class="input-container">
+                        <textarea maxlength="300" name="mensaje" class="input" id="mensaje"  placeholder="Descripción del producto" data-descripcion required maxlength="120"  data-tipo="descripcion"></textarea>
+                        <label class="input-label" for="mensaje">Descripción del producto</label>
+                        <span class="input-message-error">Este campo es válido</span>
+                    </div>
+
+                <button class="button-login" id="btn_Actualizar">Actualizar producto</button>
+            </form>
+        </section>
+
+                                <!-- FOOTER -->
+
+            <footer class="footer">
+                <p > Desarrollado por Oscar Hernández &copy; <span class="fecha"></span></p>
+
+                <!-- Obteniendo y mostrando fecha -->
+                    <script> 
+                    let fecha = new Date();
+                    let formato = fecha.getUTCFullYear();
+                    var pFecha = document.querySelector('.fecha');
+                    
+                    pFecha.innerHTML = formato;
+                    </script> 
+            </footer>
+        </main>
+    <!-- <script type="module" src="../../public/build/js/bundle.min.js"></script> -->
+    <script type="module" src="../js/actualizarControllers.js">//Siempre fijate que sea module y no modules, porque puede que no te funcione el js</script> 
+    <script type="module" src="../js/input.js"></script>
+</body>
+</html>

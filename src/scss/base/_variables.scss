@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap');
+
+// Fuentes
+$fuente_principal: 'Raleway', sans-serif;
+$fuenteSecundaria: 'Lato', sans-serif;
+$tamano1: 19px;
+$tamano2: 22px;
+$tamano3: 28px;
+
+$shadow: 0 10px 10px #0000005b;
+
+$font-weigth-input: 300;
+
+
+// Tamaño de Media Queries
+$telefono: 480px;
+$tablet2: 427px;
+$tablet: 768px;
+$otro: 900px;
+$desktop: 1024px;
+
+// Colores
+$success-color: #047900;
+$verde: #1dc517;
+$celeste:  #EAF2FD;
+$negro: #000000;
+$blanco: #FFFFFF;
+$rojo: #ff1f1f;
+$rojo2: #b80b0b;
+// $azul: #050a30;
+$azul: #050a25;
+// $fondo: #61150cf5;
+$fondo: #464646;
+$fondoSecundario: rgba(97,20,12);
+$fondo2: #2A7AE4;
+
+$separacion: 5rem;
+
+// Fuentes
+$delgada: 300;
+$regular : 400;
+$bold: 700;
+$black: 900

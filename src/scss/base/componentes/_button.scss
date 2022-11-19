@@ -1,0 +1,58 @@
+.button {
+  cursor: pointer;
+  display: block;
+  background-color: $azul;
+  border-radius: 7px;
+  border: 1px solid rgba($blanco, 0.3);
+  width: 100%;
+  margin-top: 1rem;
+  max-width: 20rem;
+  padding: 1.125rem;
+  box-sizing: border-box;
+  color: rgb($blanco, 0.5);
+  font-size: $tamano2;
+  align-self: center;
+  text-align: center;
+}
+.button:hover{
+  background-color: $azul;
+  border: 1px solid rgb($blanco, 0.8);
+  color: $blanco;
+}
+
+.boton-agregar{
+      cursor: pointer;
+        display: block;
+        background-color: $azul;
+        border-radius: 7px;
+        width: 200px;
+        border: 1px solid rgba($blanco, 0.3);
+        padding: 1rem;
+        box-sizing: border-box;
+        color: rgb($blanco, 0.5);
+        font-size: $tamano1;
+        text-align: center;
+}
+.boton-agregar:hover{
+  background-color: $azul;
+  border: 1px solid rgb($blanco, 0.8);
+  color: $blanco;
+}
+
+.simple-button {
+  border: none;
+  background-color: unset;
+}
+
+.simple-button--add {
+  color: $fondo2;
+  // background-color: rgb($fondo2, 0.5);
+}
+
+.simple-button--delete {
+  color: $rojo;
+}
+
+.simple-button--edit {
+  color: $verde;
+}

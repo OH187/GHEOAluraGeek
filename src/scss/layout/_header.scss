@@ -1,0 +1,108 @@
+.header{    
+    max-width: 1350px;
+    width: 100%;
+    margin: 0 auto;
+    background: linear-gradient(to right, $azul 30%, $fondo);
+    color: $blanco;
+    padding: 1rem 0;
+    }
+
+.contenido-header{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 auto;        
+        color: $blanco;  
+        
+        .buscador{
+            visibility:visible;
+            width: 23rem;
+            height: 4.5rem;
+            border-radius: 25px;
+            background-color: rgb($blanco, 0.7);
+            background-image: url(../../../public/build/img/buscar.png);
+            background-repeat: no-repeat;
+            background-position: right;
+            background-position-x: 200px;
+        }
+
+        .boton{
+            background-color: rgb($fondo2, 0.2);
+            border: 1px solid $fondo2;
+            width: 16rem;
+            height: 4rem;
+            color: $fondo2;
+            font-weight: 600;
+            margin-top: 1rem;
+        } 
+        .boton:hover{
+            cursor: pointer;
+            background-color: $fondo2;
+            color: $blanco;
+        }
+        
+        //Poner un icono de buscador
+        /* .input-wrapper {
+            position: relative;
+            width: 250px;
+        } */
+        
+        /*  .buscar{
+            color: #191919;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            left: 200px;
+            top: 50%;
+            transform: translateY(-55%); //Permite colocar centrado verticalmente el icono dentro del input
+        } */
+
+    h1{
+            font-weight: $bold;
+            text-align: center;
+            font-size: 2.5rem;
+        }
+
+        .navegacion a:hover{
+            color: $fondo;
+        }
+}
+
+.logo {
+    width: 17rem;
+}
+
+                                //MIXINS
+@include telefono{
+        .logo {
+            width: 17rem;
+        }
+        .boton{
+            margin-top: 0;
+        }
+        
+}
+
+    @include tablet{
+        .barra{
+            padding: 10px;
+            margin: 0;
+        }
+        .header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+        .contenido-header{
+            display: flex;
+            flex-direction: row;
+            width: 95%;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 0 auto;
+
+        }
+        
+}
